@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Untuk Title Website -->
+        <title>Ajo Florist</title>
+
+        <!-- Untuk Fav icon -->
+        <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+
+        <!-- External CSS  -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Internal CSS Untuk Bagian Deskripsi  -->
+        <style>
+            section h3 {
+                text-align: center;
+                padding: 20px 0;
+                color:  rgb(136, 171, 236) ;
+                margin-bottom: 20px;
+            }
+            .about p {
+                color: #666 ;
+                word-spacing: 2px;
+                line-height: 25px;
+            }
+        </style>
+
+        <!-- Internal CSS Untuk Tabel Harga  -->
+        <style>
+            table { 
+                border-spacing: 0;
+                border-collapse: collapse;
+                width: 100%;
+                text-align: center;
+            }
+
+            th, td {
+                border: solid 1px black;
+                padding: 10px;
+            }
+
+            th {
+                background-color:lightsteelblue;
+            }
+        </style>
+
+        <!-- Font Awesome  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    </head>
+    <body>
+        <!-- Untuk Header  -->
+        <div class="media">
+            <div class="container">
+                <ul>
+                    <li><a href="https://www.instagram.com/?hl=id"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/?gl=ID&hl=id"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://twitter.com/login"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <h1 style="float: left; padding:  15px 0; color: rgb(136, 171, 236);"><a href="index.html">Ajo Florist</a></h1>
+                <ul>
+                    <li><a href="tokobungaku.html">Beranda</a></li>
+                    <li class="active"><a href="koleksi.html">Koleksi</a></li>
+                    <li><a href="hubungikami.html">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </header>
+
+         <!-- Untuk Banner  -->
+         <section class="banner">
+            <h2>SILAHKAN PILIH KEINDAHAN ANDA DISINI :) </h2>
+        </section>
+
+<!-- Internal JS  -->
+<section class="deskripsi">
+    <div class="container">
+        <h3>Bunga apa yang sedang kamu cari?</h3>
+    <button id="myButton">Pencet Aku!</button>
+    <h1 id="myH1"></h1>
+    <script>
+        document
+            .getElementById("myButton")
+            .addEventListener(
+                "click",
+                () => (document.getElementById("myH1").innerHTML = "HAI! PILIHAN DAN KOLEKSI BUNGA DI AJO FLORIST SANGAT LENGKAP LOH! PILIH BUNGA TERBAIKMU DIBAWAH INI YA!")
+            );
+    </script>
+    <br>
+    <br>
+
+        <!-- Untuk Jadwal  -->
+        <div class="jadwalcontainer">
+            <div class="jadwal-container">
+                <section class="jadwal">
+                    <h3>Jadwal Buka Toko</h3>
+                            <li>Senin <strong>(09.00 - 21.00)</strong></li>
+                            <li>Selasa <strong>(09.00 - 21.00)</strong></li>
+                            <li>Rabu <strong>(09.00 - 21.00)</strong></li>
+                            <li>Kamis <strong>(09.00 - 21.00)</strong></li>
+                            <li>Jum'at <strong>(13.00 - 22.00)</strong></li>
+                            <li>Sabtu <strong>(09.00 - 21.00)</strong></li>
+                            <li>Minggu <strong>(OFF)</strong></li>
+                        </ol>
+                </section>
+            </div>
+        </div>
+
+        <!-- Untuk Deskripsi Bunga  -->
+        <!-- Bunga Mawar  -->
+        <h3>Koleksi Bunga Best Seller</h3>
+        <div class="showcase-container">
+            <section class="showcase">
+                <div class="showcase-image">
+                    <img src="img/bungamawar.jpg" alt="">
+                </div>
+                <div class="showcase-text">
+                    <h1>Bunga Mawar</h1>
+                    <p> Mawar merupakan salah satu tanaman semak yang memiliki 100 spesies lebih. Sebagai salah satu tanaman hias yang menarik, 
+                    bunga mawar selalu menjadi pilihan kebanyakan orang untuk berbagai acara spesial.Karena itulah, bunga yang selalu laris di toko 
+                    bunga ini kerap kali disebut sebagai lambang cinta kasih.</p>
+                    <p>Bunga mawar dapat digunakan untuk berbagai acara spesial seperti acara pernikahan hingga kado spesial untuk orang terdekat Anda.
+                    Nah, bunga mawar memiliki berbagai ukuran dan warna-warna yang indah. Sehingga Anda dapat mengkombinasikan bunga mawar dengan 
+                    bunga lainnya agar terlihat semakin cantik.</p>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Bunga Lili -->
+        <div class="showcase-container">
+            <section class="showcase">
+                <div class="showcase-text">
+                    <h1>Bunga Lili</h1>
+                    <p>Salah satu bunga paling laris serta banyak peminatnya ini, adalah bunga Lili. 
+                    Jenis bunga yang satu ini, memiliki kesan yang sangat elegan.</p>
+                    <p>Bunga lili melambangkan keanggunan dilengkapi dengan aromanya yang memikat. 
+                    Ada berbagai pilihan jenis bunga lili yang dapat Anda gunakan sebagai karangan 
+                    buket bunga, hingga untuk mempercantik acara spesial Anda.</p>
+                </div>
+                <div class="showcase-image">
+                    <img src="img/bungalili.jpg" alt="">
+                </div>
+            </section>
+        </div>
+
+         <!-- Bunga Baby’s Breath -->
+         <div class="showcase-container">
+            <section class="showcase">
+                <div class="showcase-image">
+                    <img src="img/bungababybreath" alt="">
+                </div>
+                <div class="showcase-text">
+                    <h1>Bunga Baby's Breath</h1>
+                    <p>Bunga Baby's Breath ini dikenal sebagai pelengkap bunga lainnya pada buket 
+                    bunga karena ukurannya terbilang kecil. Akan tetapi bunga baby's breath dapat 
+                    dijadikan buket bunga sendiri tanpa adanya jenis bunga lain.</p>
+                    <p>Bunga yang satu ini, kerap kali dipilih untuk momen-momen yang spesial.</p>
+                    <p>Jika Anda membutuhkan yang spesial untuk acara pernikahan hingga kelahiran 
+                    anak, bunga baby's breath merupakan pilihan paling tepat.</p>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Bunga Hydrangea -->
+        <div class="showcase-container">
+            <section class="showcase">
+                <div class="showcase-text">
+                    <h1>Bunga Hydrangea</h1>
+                    <p>Bunga Hydrangea memiliki volume yang sangat besar saat bermekaran. Hal ini 
+                    menjadi daya tarik serta ciri khas tersendiri bagi bunga hydrangea. Biasanya untuk 
+                    buket bunga, cukup menggunakan satu hingga dua tangkai saja dari bunga ini..</p>
+                    <p>Untuk lebih mempercantik buket bunga, biasanya bunga ini dapat dikombinasikan 
+                    dengan bunga daisy dan juga bunga Eucalyptus.</p>
+                </div>
+                <div class="showcase-image">
+                    <img src="img/bungahydrangea.jpg" alt="">
+                </div>
+            </section>
+        </div>
+
+        <!-- Untuk Paket -->
+        <div class="blog-container">
+            <header>
+                <h1 style="color: rgb(136, 171, 236)">MENU PILIHAN PAKET</h1>
+                <br>
+                <p>Bingung Beli Bunga Dibentuk Apa? Lihat Koleksi Dibawah Ini!</p>
+            </header>
+
+        <div class="blog-index">
+            <div class="snippet">
+                <img class="snippet-img" src="img/bouqetbunga.jpg">
+                <div class="snippet-txt">
+                    <br>
+                    <h2>Flowers Bouqet</h5>
+                        <br>
+                        <p>Bunga tangan atau yang terkenal dengan sebutan buket bunga adalah sekumpulan bunga 
+                        yang disusun menjadi sebuah rangkaian bunga. </p>
+                        <p>Biasanya karangan bunga tangan ini digunakan di acara pernikahan, dimana pengantin 
+                        wanita membawa sebuah buket sebagai aksesoris.</p>
+                        <p><small>Bouqet Bunga</small></p>
+                    </div>
+            </div>
+
+        <div class="snippet">
+            <img class="snippet-img" src="img/standingflowers.jpg">
+            <div class="snippet-txt">
+                <br>
+                <h2>Standing Flowers</h5>
+                <br>
+                <p>Jadi standing flower merupakan suatu rangkaian yang terdiri dari bunga bunga cantik yang mempunyai 
+                fungsi amat beraneka ragam antara lain merupakan selaku cinderamata kemudian selaku sarana dari 
+                perwakilan atas kehadiran pada acara penting semacam pernikahan, peresmian perusahaan, grand opening usaha semacam cafe.</p>
+                <p>Buat kamu yang masih penasaran serta mau ketahui lebih jauh tentang standing flower ini maka langsung saja 
+                ikuti keterangan yang ada dibawah ini.</p>
+                <p><small>Standing Flowers</small></p>
+            </div>
+        </div>
+
+        <div class="snippet">
+            <img class="snippet-img" src="img/boxflowers">
+            <div class="snippet-txt">
+                <br>
+                <h2>Flower Box</h5>
+                <br>
+                <p>Apa Itu Flower Box? Bagi Anda yang tidak tahu, flower box adalah susunan bunga dalam box 
+                untuk keperluan hadiah ataupun acara special tertentu.</p>
+                <p>Flower box didesain dan disusun dengan apik dalam box atau keranjang. 
+                Desainnya bisa sesuai pesanan atau tergantung florist-nya.</p>
+                <p><small>Flower Box</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Untuk Tabel Harga  -->
+<div>
+    <h3>Pilihan Dan Harga</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Gambar</th>
+                <th>Pilihan Paket</th>
+                <th>Harga</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <img src="img/standartbouqet.jpg"></td>
+                <td>Standart Flowers Bouqet</td>
+                <td>Rp. 150.000</td>
+            </tr>
+            <tr>
+                <td> <img src="img/mediumbouqet.jpg"></td>
+                <td>Medium Flowers Bouqet</td>
+                <td>Rp. 250.000</td>
+            </tr>
+            <tr>
+                <td> <img src="img/premiumbouqet.webp"></td>
+                <td>Premium Flowers Bouqet</td>
+                <td>Rp. 350.000</td>
+            </tr>
+            <tr>
+                <td> <img src="img/standartstanding.webp"></td>
+                <td>Standart Standing Flowers</td>
+                <td>Rp. 400.000</td>
+            </tr>
+            <tr>
+                <td> <img src="img/mediumstanding.webp"></td>
+                <td>Medium Standing Flowers</td>
+                <td>Rp. 600.000</td>
+            </tr>
+            <tr>
+                <td> <img src="img/premiumstanding.webp"></td>
+                <td>Premium Standing Flowers</td>
+                <td>Rp. 800.000</td>
+            </tr>
+            <tr>
+                <td> <img src="img/standartbox.png"></td>
+                <td>Standart Flowers Box</td>
+                <td>Rp. 300.000</td>
+            </tr>
+            <tr>
+                <td> <img src="img/mediumbox.png"></td>
+                <td>Medium Flowers Box</td>
+                <td>Rp. 400.000</td>
+            </tr>
+            <tr>
+                <td> <img src="img/premiumbox.png"></td>
+                <td>Premium Flowers Box</td>
+                <td>Rp. 500.000</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <!-- Untuk Scroll Top  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-shield-heart"></i></button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+         scrollFunction();
+        };
+
+        function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+        }
+
+    // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+    <!-- Untuk Footer  -->
+    <footer>
+        <div class="container">
+            <small>Copyright &copy; 2022 - Adzro Salsabilla, All Rights Reserved.</small>
+        </div>
+    </footer>
+</body>
+        
+</html>
